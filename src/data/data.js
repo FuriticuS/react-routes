@@ -1,9 +1,9 @@
 export const categories = [
-  { id: "Electronics", name: "Electronics", img: "/electronics.png" },
-  { id: "Clothing", name: "Clothing", img: "/clothing.png" },
-  { id: "Books", name: "Books", img: "/books.png" },
-  { id: "Furniture", name: "Furniture", img: "/furniture.png" },
-  { id: "Outdoor", name: "Outdoor", img: "/outdoor.png" },
+  { id: "electronics", name: "Electronics", img: "/electronics.png" },
+  { id: "clothing", name: "Clothing", img: "/clothing.png" },
+  { id: "books", name: "Books", img: "/books.png" },
+  { id: "furniture", name: "Furniture", img: "/furniture.png" },
+  { id: "outdoor", name: "Outdoor", img: "/outdoor.png" },
 ];
 
 export const products = [

@@ -1,3 +1,22 @@
 .active{
   color: blue;
 }
+
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-item img{
+  width: 250px;
+}
