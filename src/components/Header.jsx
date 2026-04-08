@@ -5,10 +5,8 @@ export function Header() {
     <>
       <nav>
         <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"/about"}>About</NavLink>
+        <NavLink to={"/about"} style={{margin: '0 12px'}}>About</NavLink>
         <NavLink to={"/cart"}>Cart</NavLink>
-        <NavLink to={"/categories"}>Categories</NavLink>
-        <NavLink to={"/product-details"}>ProductDetails</NavLink>
       </nav>
 
       <hr/>

@@ -1,4 +1,4 @@
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Cart from "./pages/Cart.jsx";
@@ -6,6 +6,7 @@ import Categories from "./pages/Categories.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Layout from "./components/Layout.jsx";
+import Thanks from "./pages/Thanks.jsx";
 
 // const router = createBrowserRouter([
 //   {path: '/', element: (<><Header/><Home/></>)},
@@ -19,8 +20,10 @@ import Layout from "./components/Layout.jsx";
 const router = createBrowserRouter([
   {path: "/", element: <Layout/>, children: [
       {index: true, element: <Home/>},
+      {path: "old-home", element: <Navigate to={"/"}/>},
       {path: "about", element: <About/>},
       {path: "cart", element: <Cart/>},
+      {path: "thanks", element: <Thanks/>},
       {path: "categories/:categoriesId", element: <Categories/>},
       {path: "product-details/:productId", element: <ProductDetails/>},
       {path: "*", element: <NotFound/>},

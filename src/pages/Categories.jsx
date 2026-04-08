@@ -5,8 +5,9 @@ export default function Categories() {
   const [searchParams, setSearchParams] = useSearchParams()
   const cat = useParams()
   const location = useLocation()
+  //console.log(location.state.maxValue)
 
-  const maxPrice = searchParams.get('maxValue') ? searchParams.get('maxValue') : location ? location.state.maxValue : Infinity;
+  const maxPrice = searchParams.get('maxValue') ? searchParams.get('maxValue') : Infinity;
 
   const categoryArray = products.filter(product => product.categoryId.toLowerCase() === cat.categoriesId && product.price <= +maxPrice);
 
@@ -22,7 +23,7 @@ export default function Categories() {
         <div>
           <input
             type="number"
-            value={searchParams.get('maxValue') || ""}
+            value={searchParams.get('maxValue')}
             onChange={searchPrice}/>
         </div>
 
