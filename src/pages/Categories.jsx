@@ -25,6 +25,7 @@ export default function Categories() {
             onChange={searchPrice}/>
         </div>
 
+      {categoryArray.length > 0 ?
         <ul className="category">
           {categoryArray.map(item =>
             <li key={item.id}>
@@ -35,7 +36,7 @@ export default function Categories() {
               </Link>
             </li>
           )}
-        </ul>
+        </ul> : 'Product not found'}
     </div>
   )
 }
