@@ -6,6 +6,8 @@ export default function Home() {
     <div>
       <h1>Home</h1>
 
+      <Link to={'/categories/electronics'} state={{maxValue: 500}}>Our sale electronics!!!</Link>
+
       <ul className="category">
         {categories.map(link => <li key={link.id}>
           <Link to={`/categories/${link.id}`} className="category-item">
